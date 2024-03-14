@@ -30,7 +30,7 @@ class Email {
         $mail->Username = $_ENV['EMAIL_USER'];
         $mail->Password = $_ENV['EMAIL_PASS'];
 
-        $mail->setFrom('cuentas@appsalon.com'); // Aqui se pondria el correo del cliente $this->email
+        $mail->setFrom($this->email); // Aqui se pondria el correo del cliente $this->email
         $mail->addAddress('cuentas@appsalon.com', 'AppSalon.com');
         $mail->Subject = 'Confirma tu cuenta';
 
@@ -59,7 +59,7 @@ class Email {
         $mail->Username = $_ENV['EMAIL_USER'];
         $mail->Password = $_ENV['EMAIL_PASS'];
 
-        $mail->setFrom('cuentas@appsalon.com'); // Aqui se pondria el correo del cliente $this->email
+        $mail->setFrom($this->email); // Aqui se pondria el correo del cliente $this->email
         $mail->addAddress('cuentas@appsalon.com', 'AppSalon.com');
         $mail->Subject = 'Reestablecer contraseña';
 
